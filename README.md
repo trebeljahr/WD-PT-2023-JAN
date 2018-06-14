@@ -12,7 +12,7 @@ We will create a cinema web page, where we will display the showtimes for some m
 
 - [Fork this repo](https://guides.github.com/activities/forking/)
 - Clone this repo into your `~/code/labs`
-- You must submit the entire angular2 app
+- You must submit the entire app
 
 ## Submission
 

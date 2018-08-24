@@ -33,24 +33,30 @@ In the Pull request name, add your name and last names separated by a dash "-"
 Inside the  `starter_code` folder, create the app using the  `ironhack_generator`. 
 
 ```bash
+$ cd starter_code
 $ irongenerate lab-express-cinema
 $ cd lab-express-cinema
-$ npm install
 ```
 
 ### Iteration 2 | Seed the database
 
-First, we need to seed our database. Here you will find an array of objects with info about nine movies. You should create a `seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
+First, we need to seed our database. Here you will find an array of objects with info 8 movies. You should create two files:
+- `models/Movie.js` for the Movie model
+- `bin/seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
+
+
 
 ```javascript
+// To insert in "bin/seeds.js"
+
 const movies = [
   {
-  title : "A Wrinkle in Time",
-  director: "Ava DuVernay",
-  stars: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
-  image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
-  description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
-  showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
+    title : "A Wrinkle in Time",
+    director: "Ava DuVernay",
+    stars: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
+    image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
+    showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   },
   {
     title : "The Strangers: Prey at Night",
@@ -106,8 +112,8 @@ const movies = [
     stars: ["Jennifer Lawrence", "Joel Edgerton", "Matthias Schoenaerts"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_UX182_CR0,0,182,268_AL_.jpg",
     description: "Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.",
-    howtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
-  },
+    showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
+  }
 ];
 ```
 
@@ -117,16 +123,15 @@ We need our home page. Simple and beautiful, on the `index.hbs` create the follo
 
 ![image](https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png)
 
+The `button` should be a link redirecting to the `/movies` route.
 
-The `button` should redirect to the `/movies` route.
-
-### Iteration 3 | List the Movies
+### Iteration 4 | List the Movies
 
 On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and pass the data about the movies.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
-### Iteration 4 | Display Movie Info
+### Iteration 5 | Display Movie Info
 
 Finally, you have to create a view to display all the info about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button of the `/movies` view.
 

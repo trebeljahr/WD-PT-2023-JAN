@@ -24,13 +24,13 @@ $ git push origin master
 ```
 Navigate to your repo and create a Pull Request from your master branch to the original repository master branch.
 
-In the Pull request name, add your name and last names separated by a dash "-"
+In the Pull request name, add the initials of your bootcamp location and your names separated by a dash "-"
 
 ## Instructions
 
 ### Iteration 1 | Generate the project
 
-Inside the  `starter_code` folder, create the app using the  `ironhack_generator`. 
+Inside the  `starter_code` folder, create the app using the  `ironhack_generator`.
 
 ```bash
 $ cd starter_code
@@ -40,7 +40,7 @@ $ cd lab-express-cinema
 
 ### Iteration 2 | Seed the database
 
-First, we need to seed our database. Here you will find an array of objects with info 8 movies. You should create two files:
+First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
 - `models/Movie.js` for the Movie model
 - `bin/seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
 
@@ -127,7 +127,7 @@ The `button` should be a link redirecting to the `/movies` route.
 
 ### Iteration 4 | List the Movies
 
-On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and pass the data about the movies.
+On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and display a list of all the movies.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
@@ -137,4 +137,4 @@ Finally, you have to create a view to display all the info about each movie. You
 
 ![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
 
-
+Happy Coding!

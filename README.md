@@ -30,7 +30,7 @@ In the Pull request name, add your name and last names separated by a dash "-"
 
 ### Iteration 1 | Generate the project
 
-Inside the  `starter_code` folder, create the app using the  `ironhack_generator`. 
+Inside the  `starter_code` folder, create the app using the  [express-generator](https://www.npmjs.com/package/express-generator). 
 
 ```bash
 $ cd starter_code

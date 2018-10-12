@@ -34,7 +34,7 @@ Inside the  `starter_code` folder, create the app using the  `ironhack_generator
 
 ```bash
 $ cd starter_code
-$ irongenerate lab-express-cinema
+$ express lab-express-cinema
 $ cd lab-express-cinema
 ```
 

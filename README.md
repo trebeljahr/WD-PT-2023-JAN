@@ -28,17 +28,8 @@ In the Pull request name, add the initials of your bootcamp location and your na
 
 ## Instructions
 
-### Iteration 1 | Generate the project
 
-Inside the  `starter_code` folder, create the app using the  `ironhack_generator`.
-
-```bash
-$ cd starter_code
-$ irongenerate lab-express-cinema
-$ cd lab-express-cinema
-```
-
-### Iteration 2 | Seed the database
+### Iteration 1 | Seed the database
 
 First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
 - `models/Movie.js` for the Movie model
@@ -117,7 +108,7 @@ const movies = [
 ];
 ```
 
-### Iteration 3 | The Home Page
+### Iteration 2 | The Home Page
 
 We need our home page. Simple and beautiful, on the `index.hbs` create the following home page:
 
@@ -125,13 +116,13 @@ We need our home page. Simple and beautiful, on the `index.hbs` create the follo
 
 The `button` should be a link redirecting to the `/movies` route.
 
-### Iteration 4 | List the Movies
+### Iteration 3 | List the Movies
 
 On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and display a list of all the movies.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
-### Iteration 5 | Display Movie Info
+### Iteration 4 | Display Movie Info
 
 Finally, you have to create a view to display all the info about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button of the `/movies` view.
 

@@ -1,6 +1,6 @@
-![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# PP | Lab Express Cinema
+# Lab Express Cinema
 
 ## Introduction
 
@@ -10,37 +10,28 @@ We will create a cinema web page, where we will display the showtimes for some m
 
 ## Requirements
 
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- You must submit the entire app
+- Fork this repo
+- Clone this repo
+
 
 ## Submission
 
-Upon completion, run the following commands
+Upon completion, run the following commands:
 ```
 $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-Navigate to your repo and create a Pull Request from your master branch to the original repository master branch.
 
-In the Pull request name, add your name and last names separated by a dash "-"
+- Create Pull Request so your TAs can check up your work.
+
+
 
 ## Instructions
 
-### Iteration 1 | Generate the project
+### Iteration 1 | Seed the database
 
-Inside the  `starter_code` folder, create the app using the  [express-generator](https://www.npmjs.com/package/express-generator). 
-
-```bash
-$ cd starter_code
-$ express lab-express-cinema
-$ cd lab-express-cinema
-```
-
-### Iteration 2 | Seed the database
-
-First, we need to seed our database. Here you will find an array of objects with info 8 movies. You should create two files:
+First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
 - `models/Movie.js` for the Movie model
 - `bin/seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
 
@@ -117,7 +108,7 @@ const movies = [
 ];
 ```
 
-### Iteration 3 | The Home Page
+### Iteration 2 | The Home Page
 
 We need our home page. Simple and beautiful, on the `index.hbs` create the following home page:
 
@@ -125,16 +116,17 @@ We need our home page. Simple and beautiful, on the `index.hbs` create the follo
 
 The `button` should be a link redirecting to the `/movies` route.
 
-### Iteration 4 | List the Movies
+### Iteration 3 | List the Movies
 
-On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and pass the data about the movies.
+On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and display a list of all the movies.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
-### Iteration 5 | Display Movie Info
+### Iteration 4 | Display Movie Info
 
 Finally, you have to create a view to display all the info about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button of the `/movies` view.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
 
 
+Happy Coding! :heart:

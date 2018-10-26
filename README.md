@@ -10,13 +10,13 @@ We will create a cinema web page, where we will display the showtimes for some m
 
 ## Requirements
 
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this
+- Fork this repo
+- Clone this repo
 
 
 ## Submission
 
-Upon completion, run the following commands
+Upon completion, run the following commands:
 ```
 $ git add .
 $ git commit -m "done"
@@ -26,8 +26,8 @@ $ git push origin master
 - Create Pull Request so your TAs can check up your work.
 
 
-## Instructions
 
+## Instructions
 
 ### Iteration 1 | Seed the database
 

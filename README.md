@@ -11,8 +11,8 @@ We will create a cinema web page, where we will display the showtimes for some m
 ## Requirements
 
 - [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- You must submit the entire app
+- Clone this
+
 
 ## Submission
 
@@ -22,9 +22,9 @@ $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-Navigate to your repo and create a Pull Request from your master branch to the original repository master branch.
 
-In the Pull request name, add the initials of your bootcamp location and your names separated by a dash "-"
+- Create Pull Request so your TAs can check up your work.
+
 
 ## Instructions
 
@@ -128,4 +128,5 @@ Finally, you have to create a view to display all the info about each movie. You
 
 ![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
 
-Happy Coding!
+
+Happy Coding! :heart:

@@ -29,6 +29,25 @@ $ git push origin master
 
 ## Instructions
 
+### Iteration 0 | Initialize the project
+
+After forking and cloning the project, you will have to add a `starter_code/.env` file:
+
+```
+PORT=3000
+```
+
+And you have to install all the dependencies:
+
+
+```sh
+$ cd starter_code
+$ npm install
+```
+
+Now you are ready to start 🚀
+
+
 ### Iteration 1 | Seed the database
 
 First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:

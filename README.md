@@ -29,6 +29,7 @@ $ git push origin master
 
 ### Iteration 0 | Initialize the project
 
+**This lab has the starer code based on the Express Generator.**
 After forking and cloning the project, you will have install all the dependencies:
 
 ```shell

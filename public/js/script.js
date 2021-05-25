@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  console.log('IronGenerator JS imported successfully!');
+  console.log('lab-express-cinema JS imported successfully!');
 
 }, false);

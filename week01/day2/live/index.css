@@ -12,6 +12,18 @@ body {
   font-size: 24px;
 }
 
+.full-screen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /* tweak position of the "background" image */
+  /* object-position: ; */
+}
+
 h1 {
   font-size: 50px;
 }
@@ -22,6 +34,10 @@ ul {
 }
 
 .container {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
   /* padding: 20px; */
   /* different ways of specifying */
 

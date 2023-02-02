@@ -3,7 +3,7 @@
 - What is a tag/element?
     - Show attribute cheatsheet https://www.w3schools.com/html/html_attributes.asp for a list.
     - Explain Hierarchy of HTML
-    - Show lists => ul, ol, li, footer, article, main, section, svg
+    - Show lists => ul, ol, li, span, footer, article, main, section, svg
     - Block vs. Inline? Cheat Sheet: https://www.w3schools.com/html/html_blocks.asp
 
 ## CSS Intro

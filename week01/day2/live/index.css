@@ -1,0 +1,66 @@
+/* CSS => Cascading Style Sheets */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* selector */
+body {
+  /* background: red; */
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+ol,
+ul {
+  /* background: blue; */
+}
+
+.container {
+  /* padding: 20px; */
+  /* different ways of specifying */
+
+  /* padding-top: 50px;
+  padding-left: 10px; */
+  width: 500px;
+  padding: 50px 20px 20px 10px;
+
+  /* padding: 50px 30px; */
+
+  /* good to remember! */
+  border: 1px solid red;
+
+  /* border-radius: 10px; */
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: blue;
+}
+
+#section-one {
+  /* background: green; */
+}
+
+.yellow-background {
+  /* colors and how to use them */
+
+  /* by name */
+  /* background: coral; */
+
+  /* rgb */
+  /* background: rgb(108, 175, 46); */
+
+  /* hex */
+  /* background: #ff0f0f; */
+}

@@ -1,0 +1,38 @@
+/* px, vw, vh, vmin, vmax */
+
+#box {
+  /* width: 90vw;
+  height: 90vw; */
+  width: calc(100vmin - 10px);
+  height: calc(100vmin - 10px);
+
+  /* use calc to combine/calculate different units  */
+  background: green;
+}
+
+/* mobile first */
+#container {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+/* break points */
+@media (min-width: 600px) and (max-width: 1199px) {
+  #container {
+    width: 200px;
+    height: 200px;
+    background: red;
+  }
+}
+
+/* keep in mind the order matters */
+@media (min-width: 1200px) {
+  #container {
+    width: 400px;
+    height: 400px;
+    background: green;
+  }
+}
+
+/* no breakpoints but still looks good => fluid design */

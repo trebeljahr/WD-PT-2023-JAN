@@ -1,0 +1,32 @@
+/* Cascading Style Sheets */
+div {
+  width: 100px;
+  height: 100px;
+}
+
+/* space is a selector */
+
+div#container.container-class {
+  background: green !important;
+}
+
+div#container.container-class {
+  background: red;
+}
+
+/* this is different! notice the spaces */
+/* div #container .container-class {
+  background: red;
+} */
+
+#container {
+  background: blue;
+}
+
+.container-class {
+  background: yellow;
+}
+
+/* 0 - 0 - 0 */
+
+/* id - classes - type */

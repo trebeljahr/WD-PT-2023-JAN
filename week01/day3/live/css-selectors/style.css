@@ -1,0 +1,78 @@
+/* pseudo-selectors */
+
+.mybutton:hover {
+  background: blue;
+}
+
+:root {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+/* html {
+
+} */
+
+/* to target a pseudo element before something */
+/* ::after
+::before */
+
+.mybutton::before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: "";
+  background: green;
+}
+
+.mybutton::after {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: "";
+  background: green;
+}
+
+/* direct vs. indirect children */
+
+#indirectList li {
+  background: yellow;
+}
+
+#directList > li {
+  background: yellow;
+}
+
+#former + div {
+  background: green;
+}
+
+span[lang] {
+  font-size: 40px;
+}
+
+span[lang="pt"] {
+  background: yellow;
+}
+
+a[href*="https://"]
+{
+  background: red;
+}
+
+.checkerboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  width: 80vmin;
+  height: 80vmin;
+  border: 1px solid black;
+}
+
+.checkerboard > div {
+  background-color: #fff;
+}
+
+.checkerboard > div:nth-child(even) {
+  background-color: #2f2f2f;
+}

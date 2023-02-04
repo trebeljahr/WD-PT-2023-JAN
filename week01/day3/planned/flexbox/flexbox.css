@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  background: #2e4057;
+  justify-content: center;
+  flex-direction: row;
+  height: fit-content;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+
+.flex-container > div {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+#one {
+  background: #f18f01;
+}
+
+#two {
+  background: #048ba8;
+}
+
+#three {
+  background: #ebebeb;
+}
+
+#four {
+  background: #99c24d;
+}
+
+#five {
+  background: #71f79f;
+}

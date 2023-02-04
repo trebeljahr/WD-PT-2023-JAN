@@ -1,0 +1,89 @@
+/* The :root CSS pseudo-class matches the root element of a 
+tree representing the document. In HTML, :root represents 
+the <html> element */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+section {
+  margin: 10%;
+}
+
+.mybutton:hover {
+    background-color: blue;
+}
+/* direct descendants  */
+#directList > li {
+  color: white;
+  background-color: black;
+}
+
+/* indirect descendants */
+#indirectList li {
+  color: white;
+  background-color: royalblue;
+}
+
+/* adjacent selector or next-sibling selector. 
+Only selects the specified element that immediately 
+follows the former specified element 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator
+*/
+
+#former + p {
+  color: red;
+}
+
+/* apply styling to multiple selectors separated with the comma */
+.oneElement,
+.anotherElement {
+  font-size: 1.5rem;
+}
+
+a {
+  display: block;
+}
+
+/* Attribute ADVANCED*/
+
+/* All spans with a "lang" attribute are bold */
+
+span[lang] {
+  font-weight: bold;
+}
+
+/* All spans in Portuguese are green */
+
+span[lang="pt"] {
+  color: #20b2aa;
+}
+
+/*   *=  -  containing x  - matches every word containing hack*/
+a[href*="hack"] {
+  color: green;
+}
+
+/* All page links have a gold background */
+
+/* ^=  -  beginning with x */
+a[href^="#"] {
+  background-color: gold;
+}
+
+.checkerboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  width: 80vmin;
+  height: 80vmin;
+  border: 1px solid black;
+}
+
+.checkerboard > div {
+  background-color: #fff;
+}
+
+.checkerboard > div:nth-child(even) {
+  background-color: #2f2f2f;
+}

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
+}
+
+div {
+    margin-top: 10px;
+}
+
+.vmin {
+    background-color: blue;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+.vmax {
+    background-color: red;
+    width: 50vmax;
+    height: 50vmax;
+}
+
+.vwvh {
+    background-color: gray;
+    width: 100vw;
+    height: 100vh;
+}
+
+.responsive {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+/* breakpoints! try always from smallest to largest screen*/
+@media (min-width: 600px) {
+    .responsive {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .responsive {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .responsive {
+        width: 800px;
+        height: 800px;
+    }
+}

@@ -16,13 +16,15 @@ shortcut for comments
 -Interpreted language examples (PHP, Python and Javascript)
 -Javascipt is mainly ran on the browser, and for Chrome the engine is called the v8 engine. Wikipedia for V8 engine(https://en.wikipedia.org/wiki/V8_(JavaScript_engine))
 -Nice article explaining the difference
-https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
+<a href='https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/'>Link</a>
 
-<h2>Variables:</h2>
+<h3>Variables:</h3>
 -ES6 => let & const(let is for variables that you will need to reassign, const is if you never planned to change the variable)
+Note: const needs to have a value for initialization, let and var do not
+
 -ES5 => var (you can re-declare var or overwrite it, and var is hoisted)
 -Great article explaining the difference and why we no longer use var
-https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+<a href='https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/'>Link</a>
 
 <h2>6 Primative data types:</h2>
 -string
@@ -35,3 +37,4 @@ https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
 <h3>Cool extras:</h3>
 f2 ===> selects all instances of the same word
 command + d or ctrl + d ===> selects the next matching instance of a variable
+command + ~ or ctrl + ~ ===> opens terminal (vs code)

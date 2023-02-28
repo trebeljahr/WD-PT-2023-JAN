@@ -78,5 +78,40 @@ console.log(todoListElement.innerHTML);
 console.log(todoListElement.innerText);
 
 [...todoListElement.children].forEach((item) => {
-  item.className = "checked";
+  // item.className = "checked";
+  // toggleChecked(item);
+  item.addEventListener("click", handleClick);
+});
+
+function toggleChecked(elem) {
+  elem.classList.toggle("checked");
+  // elem.className = elem.className === "checked" ? "" : "checked";
+}
+
+// DRY => Don't Repeat Yourself
+function handleClick(event) {
+  console.log("Hello you clicked here!");
+
+  // event bubbling => if somebody wants to research
+  toggleChecked(event.target);
+  console.log(event);
+}
+
+// event listeners
+heading1.addEventListener("click", handleClick);
+
+// select button somehow
+// add Event listener to it
+// write function that creates element (it should take the value for the text from the input) + attaches it to the todo list
+const btn = document.getElementById("add-todo");
+
+btn.addEventListener("click", () => {
+  const li = document.createElement("li");
+  const input = document.getElementById("todo-item-input");
+  li.innerText = input.value;
+
+  todoListElement.appendChild(li);
+  input.value = "";
+
+  li.addEventListener("click", handleClick);
 });

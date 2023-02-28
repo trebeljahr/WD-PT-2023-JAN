@@ -210,6 +210,14 @@ square1.info();
 
 square1.info2();
 
+class A extends Rectangle {
+  info() {
+    console.log("This a", this.a, this.b);
+  }
+}
+
+const a = new A(10, 20);
+a.info();
 // rect1.info2();
 
 // const newObject = Object.create(square1);

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .checked {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="my-heading">This is my heading</h1>
+    <ul id="long-list-container"></ul>
+    <div class="todo-container">
+      <p class="wrong">Paragraph to remove</p>
+      <ul class="wrong">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- this is where the heading goes -->
+      <ul id="todo-list">
+        <li>learn javascript</li>
+        <li>buy groceries</li>
+        <li>learn react</li>
+        <li>learn mongo db</li>
+      </ul>
+    </div>
+    <label for="todo-item-input">Todo</label>
+    <input type="text" id="todo-item-input" value="finish lab today" />
+    <button id="add-todo">Add a Todo</button>
+    <!-- this is a broken image -->
+    <div>
+      <img id="broken-image" src="foo" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

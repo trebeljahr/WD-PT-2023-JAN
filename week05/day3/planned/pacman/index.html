@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacman</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+      }
+      .fullscreen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu" class="fullscreen">
+      <h1>Pacman</h1>
+      <button id="start-button">Start</button>
+    </div>
+    <div id="game-over" class="fullscreen hidden">
+      <h1>Game Over</h1>
+      <button id="restart-button">Restart</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

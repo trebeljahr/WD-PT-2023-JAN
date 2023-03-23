@@ -1,0 +1,18 @@
+body {
+	color: blue;
+	background-color: bisque;
+} 
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-col > * {
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
+
+img {
+	width: 200px;
+}

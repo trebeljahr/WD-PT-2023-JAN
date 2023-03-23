@@ -32,10 +32,17 @@ function collideRectangles(rect1, rect2) {
   }
   return false;
 }
+
 // 60 times per second this will be called
 let x = 0;
 
+// way of executing a function in a time interval
+// setInterval();
+
 function draw() {
+  // might be useful for the lab with Math.random()
+  // console.log(frameCount);
+
   // const scoreElement = document.getElementById("score");
   // scoreElement.innerText = x;
 

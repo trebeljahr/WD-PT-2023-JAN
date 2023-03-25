@@ -1,0 +1,32 @@
+body {
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+  min-height: 80vh;
+}
+#body {
+  min-height: 80vh;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.header {
+  background-color: blue;
+  color: whitesmoke;
+  margin: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: blue;
+  color: whitesmoke;
+  margin: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

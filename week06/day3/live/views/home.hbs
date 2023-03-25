@@ -1,0 +1,32 @@
+<div id="body">
+  {{!-- just to test that the route works to here --}}
+<h1> this is the home file</h1>
+
+{{!-- partial syntax is a > sign followed by the name of the partial and then the data you want to send to it --}}
+{{> testPartial name}}
+<h1>{{name}}</h1>
+{{! this is a basic if statement in hbs }}
+{{#if fromEngland}}
+  <h4>{{fromEngland}}</h4>
+{{else}}
+  <h4>He is also Spanish</h4>
+{{/if}}
+{{! <--unless is the opposite of if/else --> }}
+{{#unless likesToClimb}}
+  <h3>Climbing isn't his thing</h3>
+{{/unless}}
+{{! going one object deeper in hbs }}
+{{#with address}}
+<h2>{{
+   ../name}}'s address:</h2>
+  <p>Street:{{street}}</p>
+  <p>Postcode: {{postcode}}</p>
+
+{{/with}}
+
+{{!-- loop example --}}
+{{!-- dont forget to use the this word to access each iteration  --}}
+{{#each studentsArray }}
+<h6>Student: {{this}}</h6>
+{{/each}}
+</div>

@@ -7,12 +7,12 @@ const VikingModel = require("../models/VikingModel");
 const Ragnar = {
   firstName: "Ragnar",
   familyName: "Lothbrok",
-  weapon: "Smarts",
+  weapon: "Axe",
   placesConquered: 0,
 };
 const Odin = {
   firstName: "Odin",
-  weapon: "Power",
+  weapon: "Sword",
   placesConquered: 50,
 };
 const Floki = {
@@ -30,22 +30,22 @@ mongoose
   .then(() => {
     console.log("Connected all good");
     //drops or cleans the database bc nodemon
-    //return VikingModel.deleteMany();
-    return;
+    return VikingModel.deleteMany();
+    //return;
   })
   .then(() => {
     console.log("Database cleaned, ready to insert");
     //return VikingModel.create(Ragnar);
-    //return VikingModel.insertMany(vikingArray);
-    return;
+    return VikingModel.insertMany(vikingArray);
+    //return;
   })
-  .then(() => {
-    //console.log("Vikings created");
+  .then((allTheNewVikings) => {
+    console.log("Vikings created", allTheNewVikings);
     //finding one viking with the findOne method from mongoose
-    //return VikingModel.findOne({ firstName: 'Ragnar' });
+    return VikingModel.findOne({ firstName: "Ragnar" });
     //<========
     //finding one viking with findById
-    return VikingModel.findById("6425cc6fc8f5a40077dab635");
+    //return VikingModel.findById("6425cc6fc8f5a40077dab635");
     //<========
     //find all of the vikings in the DB
     //return VikingModel.find();

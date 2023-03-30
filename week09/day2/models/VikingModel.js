@@ -13,7 +13,10 @@ const vikingSchema = new Schema({
     required: true,
   },
   familyName: String,
-  weapon: String,
+  weapon: {
+    type: String,
+    enum: ["Axe", "Sword", "Boat Making"],
+  },
   placesConquered: Number,
 });
 

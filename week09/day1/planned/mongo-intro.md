@@ -108,3 +108,6 @@ If you want to query for an object id, you should specify that in the querie bec
 `{ title: 1 }` sort by ascending order of title.
 `{ tile: -1 }` sort by descending order of title.
 
+## MongoDB is very powerful: 
+### Example Projection to create a new field: 
+{ dayOfMonth: { $dayOfMonth: { $dateFromString: { dateString: "$created_at" } }  } }

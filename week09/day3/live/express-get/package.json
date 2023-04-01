@@ -1,0 +1,17 @@
+{
+  "name": "express-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "axios": "^0.25.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

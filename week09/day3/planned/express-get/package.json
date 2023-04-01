@@ -1,0 +1,16 @@
+{
+  "name": "express-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "express": "^4.17.2",
+    "hbs": "^4.2.0"
+  }
+}

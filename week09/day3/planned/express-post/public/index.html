@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello Internet</h1>
+    <h2>URL encoding!</h2>
+
+    <!-- Different form encodings! -->
+    <form
+      action="/form"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <label for="name">Name:</label>
+      <!-- id is important for the label -->
+      <!-- but name="name" is even more important since that will 
+        be used for the key in the request body object 
+      -->
+      <input
+        id="name"
+        name="hello"
+        type="text"
+        value=""
+        placeholder="Type your info here"
+      />
+      <button type="submit">Send!</button>
+    </form>
+
+    <h2>JSON encoding!</h2>
+    <form action="/form" method="post" enctype="application/json">
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        value=""
+        placeholder="Type your info here"
+      />
+      <button type="submit">Send!</button>
+    </form>
+
+    <h2>File Uploading!</h2>
+    <form action="/upload-avatar" method="post" enctype="multipart/form-data">
+      <input type="file" name="avatar" accept="image/png, image/jpeg" />
+      <input type="submit" />
+    </form>
+
+    <h2>Turn your image into a grayscale image!</h2>
+    <form action="/grayscale" method="post" enctype="multipart/form-data">
+      <input type="file" name="avatar" accept="image/png, image/jpeg" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

@@ -20,3 +20,18 @@ greetingArrow = () => {
   return "testing reassigning a function";
 };
 console.log("this is the test", greetingArrow());
+
+// ternary operator
+//short hand way to write if and else
+
+// if (2 > 3) {
+//   console.log("Thats not right!");
+// } else {
+//   console.log("Yes, 2 is less than 3");
+// }
+
+2 > 3
+  ? console.log("Thats not right!")
+  : 4 > 5
+  ? console.log("Yes, 4 is greater than 5")
+  : console.log("Yes, 2 is less than 3");

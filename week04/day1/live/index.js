@@ -92,13 +92,13 @@ const wizards = [
   },
 ];
 
-//.map find the firstNames of all the wizards
-// const mappedArr = wizards.map((wizard) => {
-//   return {
-//     name: wizard.firstName + " " + wizard.lastName,
-//     grade: wizard.marks,
-//   };
-// });
+// .map find the firstNames of all the wizards
+const mappedArr = wizards.map((wizard) => {
+  return {
+    name: wizard.firstName + " " + wizard.lastName,
+    grade: wizard.marks,
+  };
+});
 // // console.log(mappedArr);
 // let numsArr = [1, 2, 3, 6, 20];
 // let newNums = numsArr.map((number, index) => {

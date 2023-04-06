@@ -1,0 +1,16 @@
+<h1>{{appTitle}} 🚀</h1>
+<p>Welcome Ironhacker!</p>
+<h3>create a wizard</h3>
+<form action="/create" method="post">
+  <input type="text" name="name" />
+  <input type="text" name="house" />
+  <button type="submit">create oneWizard</button>
+</form>
+{{#each charsFromMyDB}}
+  <a href="/character/{{_id}}">
+    <div class="card">
+      <img src="{{image}}" alt={{name}} class="image" />
+      <h3>{{name}}</h3>
+    </div>
+  </a>
+{{/each}}

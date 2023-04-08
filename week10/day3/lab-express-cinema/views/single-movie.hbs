@@ -1,0 +1,21 @@
+<h1>Single movie page</h1>
+<div class="single-movie-container">
+  <img src="{{image}}" alt="{{title}}" />
+  <div>
+    <a href="/movies">Go back</a>
+    <h2>{{title}}</h2>
+    <h2>Director: {{director}}</h2>
+    <h2>Stars:</h2>
+    <ul>
+      {{#each stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h4>{{description}}</h4>\
+    <div class="flex">
+      {{#each showtimes}}
+        <h4>{{this}} |</h4>
+      {{/each}}
+    </div>
+  </div>
+</div>

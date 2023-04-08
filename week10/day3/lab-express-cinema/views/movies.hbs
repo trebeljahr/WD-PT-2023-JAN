@@ -1,0 +1,15 @@
+
+<h1>{{title}}All the Movies</h1>
+<div class="movies-container">
+  {{#each movies}}
+    <div class="movie">
+      <img src="{{image}}" alt="{{title}}" />
+      <h3>{{title}}</h3>
+      <a href="/movie/{{_id}}">See More</a>
+      <a href="/movie/{{_id}}/update">Update Movie</a>
+     
+      <a class='delete' href="/delete/{{_id}}">Delete</a>
+    </div>
+  {{/each}}
+
+      

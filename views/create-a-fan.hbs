@@ -1,0 +1,12 @@
+<h1>Create a Fan</h1>
+<form action="/fan/fan-create" method="post">
+  <label>Fan Name:
+    <input type="text" name="name" />
+  </label>
+  <select name="moviesTheyLike" multiple>
+    {{#each allMovies}}
+      <option value="{{_id}}">{{title}}</option>
+    {{/each}}
+  </select>
+  <button type="submit">Create the Fan</button>
+</form>

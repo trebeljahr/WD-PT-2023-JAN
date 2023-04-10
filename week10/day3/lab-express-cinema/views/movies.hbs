@@ -8,8 +8,35 @@
       <a href="/movie/{{_id}}">See More</a>
       <a href="/movie/{{_id}}/update">Update Movie</a>
      
-      <a class='delete' href="/delete/{{_id}}">Delete</a>
+      <button class='delete' value="{{_id}}">Delete</button>
     </div>
   {{/each}}
 
+  {{!-- <============ This is where the magic starts for making a pop up box to confirm the user wants to delete a movie========>
+
+  First we need a script tag on the hbs page with the buttons we want to target --}}
+  <script type="text/javascript">
+  //Next we make node list(kind of like an array) of all the delete buttons with class of delete
+ const allDeleteBtns =  document.querySelectorAll('.delete')
+  //Note: forEach will not work if you use getElementsByClassName... just use querySelectorAll, its better ;)
+  //Now we loop of the array and add an event listener to each button
+allDeleteBtns.forEach((oneDelelteBtn)=>{
+  //this is the event listener for each delete button
+oneDelelteBtn.addEventListener('click', (event)=>{
+  //You can console.log it to make sure you have it targeted correctly
+  //Also we will need the _id of whichever movie we clicked, so I added a property value='{{_id}}' to the button
+  //We access this _id with the oneDeleteButton.value
+  //As always, try to console.log it if you are not sure you did it correctly
+  console.log('Here is our button and the value of the _id', oneDelelteBtn, oneDelelteBtn.value)
+  //Now we use the 'confirm' prompt, this will ask 'Are you sure?' with an ok button or cancel button
+  //Here we check if the clicked ok, then we need to make our get request to our server for our delete route
+  if(confirm('Are you sure?')){
+    //The delete route needs the _id so we use a template literal to inject the _id into the new URL 
+    //This may be new and scary looking, but it is just a way to change our URL with Javascript (window.location)
+    //window.location isset with and = sign and you just give it a string of what you want the new URL to be.
+    window.location = `http://localhost:3000/delete/${oneDelelteBtn.value}`
+  }
+ })
+ })
+  </script>
       

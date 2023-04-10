@@ -9,7 +9,7 @@ router.get("/", (req, res, next) => res.render("index"));
 router.get("/movies", async (req, res) => {
   //first get all of the movies from the DB
   const allMovies = await MovieModel.find();
-  console.log("Here are the movies in the DB", allMovies);
+  // console.log("Here are the movies in the DB", allMovies);
   res.render("movies", { movies: allMovies, testTitle: "Wiebke title" });
 });
 
@@ -46,8 +46,8 @@ router.post("/movie/:id/update", async (req, res) => {
 //delete route for one movie
 router.get("/delete/:movieID", async (req, res) => {
   const { movieID } = req.params;
-  // await MovieModel.findByIdAndDelete(movieID);
-  // res.redirect("/movies");
+  await MovieModel.findByIdAndDelete(movieID);
+  res.redirect("/movies");
 });
 
 // //object deconstruction example

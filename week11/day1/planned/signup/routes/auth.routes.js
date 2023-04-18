@@ -1,4 +1,5 @@
 const bcryptjs = require("bcryptjs");
+const User = require("../models/User.model");
 const saltRounds = 12;
 
 // const crypto = require("crypto");
@@ -16,15 +17,17 @@ router.post("/signup", async (req, res) => {
   //   ... do something
   const { email, password } = req.body;
   // never ever do this!
-
   //   const newUser = new User({ email, password });
+
   const salt = await bcryptjs.genSalt(saltRounds);
   console.log(salt);
 
   const hash = await bcryptjs.hash(password, salt);
   console.log(hash);
 
-  await newUser.save({ email, password: hash });
+  const user = new User({ email, password: hash });
+  await user.save();
+
   res.redirect("/profile");
 });
 

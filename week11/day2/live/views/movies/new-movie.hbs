@@ -1,0 +1,14 @@
+<h2>Create a new movie in our database</h2>
+
+<form method="POST" action="/movies/create">
+  <input type="text" name="title" value="" placeholder="Enter the title here" />
+  <input type="text" name="genre" value="" placeholder="Enter the genre here" />
+  <input type="text" name="plot" value="" placeholder="Enter the plot here" />
+
+  <select name="cast" multiple>
+    {{#each options}}
+      <option value="{{_id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <button type="submit">Create!</button>
+</form>

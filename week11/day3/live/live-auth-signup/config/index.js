@@ -37,7 +37,7 @@ module.exports = (app) => {
       secret: process.env.SESS_SECRET,
       store: MongoStore.create({ mongoUrl: MONGO_URI }),
       resave: true,
-      saveUninitialized: true,
+      saveUninitialized: false,
 
       cookie: {
         sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",

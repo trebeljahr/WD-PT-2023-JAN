@@ -69,6 +69,8 @@ router.post("/login", async (req, res, next) => {
 
     req.session.user = {
       email: user.email,
+      // you can adapt this to hold more data and info
+      // admin: user.admin
     };
 
     console.log(req.body);

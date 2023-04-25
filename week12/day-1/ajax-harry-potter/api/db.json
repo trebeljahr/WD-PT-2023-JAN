@@ -1,0 +1,76 @@
+{
+  "Gryffindor": [
+    {
+      "id": 1,
+      "name": "Harry Potter",
+      "wizard": true,
+      "patronus": "Stag"
+    },
+    {
+      "id": 2,
+      "name": "Ron Weasley",
+      "wizard": true,
+      "patronus": "Jack Russel Terrier"
+    },
+    {
+      "id": 3,
+      "name": "Hermione Granger",
+      "wizard": true,
+      "patronus": "Otter"
+    },
+    {
+      "id": 4,
+      "name": "Neville Longbottom",
+      "wizard": true,
+      "patronus": "Black Bear"
+    },
+    {
+      "name": "Shaun",
+      "patronus": "House Cat",
+      "wizard": true,
+      "id": 5
+    },
+    {
+      "name": "Lena",
+      "patronus": "Tiger",
+      "wizard": true,
+      "id": 6
+    }
+  ],
+  "Slytherin": [
+    {
+      "id": 5,
+      "name": "Tom Riddle",
+      "wizard": true,
+      "patronus": ""
+    },
+    {
+      "id": 6,
+      "name": "Draco Malfoy",
+      "wizard": true,
+      "patronus": ""
+    }
+  ],
+  "Hufflepuff": [
+    {
+      "id": 7,
+      "name": "Cedric Diggory",
+      "wizard": true,
+      "patronus": ""
+    },
+    {
+      "name": "Max",
+      "wizard": true,
+      "patronus": "Cat",
+      "id": 9
+    }
+  ],
+  "Ravenclaw": [
+    {
+      "id": 10,
+      "name": "Rowena Ravenclaw",
+      "wizard": true,
+      "patronus": ""
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./public/stylesheets/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Hogwarts</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Welcome to Hogwarts</h1>
+      <div class="characters-container">
+        <div class="character-info">
+          <div class="name">Student Name</div>
+          <div class="occupation">Are they a Wizard</div>
+          <div class="weapon">Student Patronous</div>
+        </div>
+      </div>
+      <section class="operations">
+        <div class="operation">
+          <button id="fetch-all">Find All Students</button>
+        </div>
+        <div class="operation">
+          <button id="fetch-Grffindor">Find Gryffindor Students</button>
+        </div>
+        <div class="operation">
+          <button id="fetch-Slytherin">Find Slytherin Students</button>
+        </div>
+        <div class="operation">
+          <button id="fetch-Hufflepuff">Find Hufflepuff Students</button>
+        </div>
+        <div class="operation">
+          <button id="fetch-Ravenclaw">Find Ravenclaw Students</button>
+        </div>
+        <div class="operation">
+          <label for="character-id">Search by ID: </label>
+          <input
+            type="text"
+            name="character-house"
+            id="characterHouse"
+            placeholder="character house"
+          />
+          <input
+            type="text"
+            name="character-id"
+            id="characterId"
+            placeholder="character id"
+          />
+          <button id="fetch-one">Find one</button>
+        </div>
+        <div class="operation delete">
+          <label for="character-id-delete">Delete by ID: </label>
+          <input
+            type="text"
+            name="character-id-delete"
+            id="characterDeleteId"
+          />
+          <button id="delete-one">Delete one</button>
+        </div>
+      </section>
+    </section>
+    <section class="container">
+      <section class="form-container">
+        <h2>New Student</h2>
+        <form id="new-character-form" class="character-form">
+          <div class="field-new">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="new-student-name" />
+          </div>
+          <div class="field-new">
+            <label for="patronous">Patronous: </label>
+            <input type="text" name="patronous" id="new-student-patronus" />
+          </div>
+          <div class="field-new">
+            <label for="wizard">Is Wizard: </label>
+            <input name="wizard" type="checkbox" id="new-student-wizard" />
+          </div>
+          <button id="send-data">Enroll Student</button>
+        </form>
+      </section>
+      <section class="form-container">
+        <h2>Edit Student</h2>
+        <form id="edit-character-form" class="character-form">
+          <div class="field">
+            <label for="student-id">ID: </label>
+            <input type="text" name="student-id" />
+          </div>
+          <div class="field">
+            <label for="name">Name: </label>
+            <input type="text" name="name" />
+          </div>
+          <div class="field">
+            <label for="patronous">Patronous: </label>
+            <input type="text" name="patronous" />
+          </div>
+          <div class="field">
+            <label for="wizard">Is wizard: </label>
+            <input name="wizard" type="checkbox" />
+          </div>
+          <button id="send-data">Update Student Info</button>
+        </form>
+      </section>
+    </section>
+    <script
+      type="text/javascript"
+      src="./public/javascript/APIHandler.js"
+    ></script>
+    <script type="text/javascript" src="./public/javascript/index.js"></script>
+  </body>
+</html>

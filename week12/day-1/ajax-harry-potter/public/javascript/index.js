@@ -1,23 +1,37 @@
 const hogwartsAPI = new APIHandler("http://localhost:8000");
-
+const parentContainer = document.querySelector(".characters-container");
 window.addEventListener("load", () => {
   //fetch all students
   document
     .getElementById("fetch-all")
     .addEventListener("click", async (event) => {
       console.log("fetch all clicked");
-      const response = await hogwartsAPI.getAllStudents("Gryffindor");
+      parentContainer.innerHTML = "";
+      const response1 = await hogwartsAPI.getAllStudents("Gryffindor");
       const response2 = await hogwartsAPI.getAllStudents("Hufflepuff");
       const response3 = await hogwartsAPI.getAllStudents("Ravenclaw");
       const response4 = await hogwartsAPI.getAllStudents("Slytherin");
       const hogwarts = {
-        Gryffindor: response,
+        Gryffindor: response1,
         Hufflepuff: response2,
         Ravenclaw: response3,
         Slytherin: response4,
       };
       console.log("Here is Hogwarts", hogwarts);
+
+      for (let i = 0; i < hogwarts.Gryffindor.length; i++) {
+        let currentStudent = hogwarts.Gryffindor[i];
+        const newDiv = document.createElement("div");
+        newDiv.classList.add("character-info");
+        newDiv.innerHTML = `
+        <div class="name">Student Name: ${currentStudent.name}</div>
+        <div class="occupation">Are they a Wizard: ${currentStudent.wizard}</div>
+        <div class="weapon">Student Patronous: ${currentStudent.patronus}</div>
+        `;
+        parentContainer.appendChild(newDiv);
+      }
     });
+
   //fetch only Gryffindor students
   document
     .getElementById("fetch-Grffindor")

@@ -1,0 +1,14 @@
+body {
+  background-color: aqua;
+}
+
+.navbar {
+  background-color: aquamarine !important;
+}
+.carousel-item img {
+  height: 60vh !important;
+  object-fit: cover;
+}
+.card-body {
+  background-color: aqua;
+}

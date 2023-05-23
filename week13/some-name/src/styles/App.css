@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.student {
+  color: aqua;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50vh;
+}
+.section1 {
+  background-color: aqua;
+}
+.section2 {
+  background-color: rgb(111, 245, 77);
+}
+#logo {
+  height: 40rem;
+}

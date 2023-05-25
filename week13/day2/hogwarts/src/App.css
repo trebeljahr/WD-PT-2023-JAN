@@ -1,0 +1,9 @@
+body {
+  padding: 30px;
+}
+.student-card {
+  width: 60vw;
+  border: 2px solid gray;
+  box-shadow: 0 0 20px gray;
+  margin: 20px;
+}

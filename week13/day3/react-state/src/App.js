@@ -1,12 +1,14 @@
-import logo from "./logo.svg";
+import logoajlsfdkjsadlkfj from "./logo.svg";
 import "./App.css";
 // this is ESModule Syntax
-import { useState } from "react";
-import { NamesComponent } from "./NamesComponent";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { ListComponent as SomeOtherWeirdName } from "./NamesComponent";
+
+// import Lksadjflsadkjfkl from "./NamesComponent";
 
 function App() {
   const [isToggled, setIsToggled] = useState(false);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = React.useState(0);
 
   const toggleLogo = () => {
     setIsToggled(!isToggled);
@@ -19,13 +21,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NamesComponent
+        <SomeOtherWeirdName
           defaultNames={["Olga", "Wiebke", "Lena", "Mauricio", "Yo Jia"]}
           firstNameInTheList="Rico"
         />
 
         {isToggled ? (
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logoajlsfdkjsadlkfj} className="App-logo" alt="logo" />
         ) : (
           <h1>Hello there!</h1>
         )}
@@ -38,7 +40,12 @@ function App() {
         <button onClick={increaseCount}>+</button>
         <button onClick={() => setCount(count - 1)}>-</button>
 
-        <NamesComponent />
+        <SomeOtherWeirdName />
+        <SomeOtherWeirdName
+          defaultElements={["Star Wars", "Harry Potter", "Lord of the Rings"]}
+          firstElementInTheList="Avatar"
+        />
+
         <a
           className="App-link"
           href="https://reactjs.org"

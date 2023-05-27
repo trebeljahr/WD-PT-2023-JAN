@@ -1,43 +1,38 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
-export function NamesComponent({
-  defaultNames = ["Mattia", "Max", "Rampriya", "Rohan", "Yvo"],
-  firstNameInTheList = "Shaun",
+function ListComponent({
+  defaultElements = ["Mattia", "Max", "Rampriya", "Rohan", "Yvo"],
+  firstElementInTheList = "Shaun",
 }) {
-  const [possibleNames, setPossibleNames] = useState(defaultNames);
-  const [names, setNames] = useState([
-    { name: firstNameInTheList, id: nanoid() },
+  const [possibleElements, setPossibleElements] = useState(defaultElements);
+  const [elements, setElements] = useState([
+    { name: firstElementInTheList, id: nanoid() },
   ]);
-  // export function NamesComponent(props) {
-  //   const [possibleNames, setPossibleNames] = useState(props.defaultNames);
-  //   const [names, setNames] = useState([
-  //     { name: props.firstNameInTheList, id: nanoid() },
-  //   ]);
 
   const addName = () => {
-    if (possibleNames.length === 0) {
-      console.log("No more names to add");
+    if (possibleElements.length === 0) {
+      console.log("No more Elements to add");
       return;
     }
-    const newNameIndex = Math.floor(Math.random() * possibleNames.length);
-    const newName = possibleNames[newNameIndex];
+    const newNameIndex = Math.floor(Math.random() * possibleElements.length);
+    const newName = possibleElements[newNameIndex];
 
-    const possibleNamesCopy = [...possibleNames];
-    possibleNamesCopy.splice(newNameIndex, 1);
-    setPossibleNames(possibleNamesCopy);
+    const possibleElementsCopy = [...possibleElements];
+    possibleElementsCopy.splice(newNameIndex, 1);
+    setPossibleElements(possibleElementsCopy);
 
-    setNames([...names, { name: newName, id: nanoid() }]);
+    setElements([...elements, { name: newName, id: nanoid() }]);
   };
 
   const deleteHandler = (idToDelete) => {
-    setNames(names.filter(({ id }) => id !== idToDelete));
+    setElements(elements.filter(({ id }) => id !== idToDelete));
   };
 
   return (
     <>
       <ul>
-        {names.map(({ id, name }) => {
+        {elements.map(({ id, name }) => {
           return (
             <li key={id}>
               <p>
@@ -59,3 +54,8 @@ export function NamesComponent({
     </>
   );
 }
+
+export { ListComponent };
+export default ListComponent;
+
+// export object => { ListComponent, default }

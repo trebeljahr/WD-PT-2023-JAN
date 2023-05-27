@@ -10,7 +10,9 @@ function App() {
   const [isToggled, setIsToggled] = useState(false);
   const [count, setCount] = React.useState(0);
 
-  const toggleLogo = () => {
+  const toggleLogo = (event) => {
+    console.log(event);
+
     setIsToggled(!isToggled);
   };
 

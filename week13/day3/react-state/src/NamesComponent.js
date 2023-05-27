@@ -25,7 +25,8 @@ function ListComponent({
     setElements([...elements, { name: newName, id: nanoid() }]);
   };
 
-  const deleteHandler = (idToDelete) => {
+  const deleteHandler = (event, idToDelete) => {
+    console.log(event, idToDelete);
     setElements(elements.filter(({ id }) => id !== idToDelete));
   };
 
@@ -39,8 +40,8 @@ function ListComponent({
                 {name}
                 <button
                   style={{ display: "inline" }}
-                  onClick={() => {
-                    deleteHandler(id);
+                  onClick={(event) => {
+                    deleteHandler(event, id);
                   }}
                 >
                   -

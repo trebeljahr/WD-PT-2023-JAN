@@ -1,0 +1,50 @@
+[
+  {
+    "house": "Gryffindor",
+    "name": "Harry",
+    "muggle": true,
+    "img": "https://gamingbolt.com/wp-content/uploads/2018/10/harry-potter.jpg"
+  },
+  {
+    "house": "Gryffindor",
+    "name": "Ron",
+    "muggle": false,
+    "img": "https://media.harrypotterfanzone.com/ron-weasley-order-of-the-phoenix-portrait.jpg"
+  },
+  {
+    "house": "Gryffindor",
+    "name": "Hermione",
+    "muggle": true,
+    "img": "https://images4.fanpop.com/image/photos/24400000/Hermione-Granger-Wallpaper-hermione-granger-24489063-1024-768.jpg"
+  },
+  {
+    "house": "Ravenclaw",
+    "name": "Rowena",
+    "muggle": false,
+    "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6cfffe29-c799-45aa-8a06-f5e67def638b/dbyvtk7-2366c760-252a-40b0-886b-739e010148e7.png/v1/fill/w_1280,h_1921,q_80,strp/rowena_ravenclaw_by_legendarypirates_dbyvtk7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZjZmZmZTI5LWM3OTktNDVhYS04YTA2LWY1ZTY3ZGVmNjM4YlwvZGJ5dnRrNy0yMzY2Yzc2MC0yNTJhLTQwYjAtODg2Yi03MzllMDEwMTQ4ZTcucG5nIiwiaGVpZ2h0IjoiPD0xOTIxIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvNmNmZmZlMjktYzc5OS00NWFhLThhMDYtZjVlNjdkZWY2MzhiXC9sZWdlbmRhcnlwaXJhdGVzLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.6HgM2nANcu-G-Z_7M1rA1Wd5hVgoVKXHQgXuuVBL4tM"
+  },
+  {
+    "house": "Ravenclaw",
+    "name": "Luna",
+    "muggle": true,
+    "img": "http://www.elbakin.net/plume/xmedia/fantasy/news/potter/phenix-film/lunaHR.jpg"
+  },
+  {
+    "house": "Slytherin",
+    "name": "Draco",
+    "muggle": false,
+    "img": "https://images6.fanpop.com/image/photos/32800000/Draco-Malfoy-draco-malfoy-32824334-2148-2129.jpg"
+  },
+  {
+    "house": "Slytherin",
+    "name": "Tom",
+    "muggle": true,
+    "img": "https://i.pinimg.com/736x/2e/c2/28/2ec228e768083b48b308247288ad3b0e.jpg"
+  },
+  {
+    "house": "Hufflepuff",
+    "name": "Cedric",
+    "muggle": false,
+    "img": "https://1.bp.blogspot.com/-NlqR7sVmGhg/XpSbx-73txI/AAAAAAAANvA/n_BV1Q4857wlRKFzpRgoX2P34WD_dARxgCLcBGAsYHQ/w1200-h630-p-k-no-nu/Cedric%2BDiggory%2B%2528III%2529.gif"
+  }
+]

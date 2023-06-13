@@ -1,0 +1,41 @@
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  background: darkblue;
+  display: flex; 
+  color: white;
+  justify-content: flex-start;
+  align-items:center;
+  border-bottom: 2px black solid;
+}
+
+
+.navbar > a {
+  font-size: 24px;
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar > a:first-child {
+  margin-left: 30px;
+}
+
+.footer {
+  width: 100%;
+  background: darkblue;
+  padding: 20px 0;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}

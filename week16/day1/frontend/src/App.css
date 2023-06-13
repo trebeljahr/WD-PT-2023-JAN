@@ -1,0 +1,16 @@
+.product-card {
+  border: 2px solid gray;
+  border-radius: 2rem;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

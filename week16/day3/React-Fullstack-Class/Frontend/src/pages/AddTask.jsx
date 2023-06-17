@@ -6,7 +6,7 @@ const AddTask = () => {
   return (
     <div className="">
       <h3>Create New Task</h3>
-      <TaskForm onSubmit={TaskService.createTask} />
+      <TaskForm createTask={TaskService.createTask} />
     </div>
   );
 };

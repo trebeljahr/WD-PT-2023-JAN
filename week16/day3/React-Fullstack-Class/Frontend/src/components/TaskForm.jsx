@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const TaskForm = ({ onSubmit }) => {
+const TaskForm = ({ createTask }) => {
   const [taskDuration, setTaskDuration] = useState("");
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
-
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      let newTask;
-      newTask = {
+      let newTask = {
         owner: "me",
         status: "not done",
-        taskDuration: taskDuration,
-        taskName: taskName,
-        taskDescription: taskDescription,
+        duration: taskDuration,
+        name: taskName,
+        description: taskDescription,
       };
-      onSubmit();
+      const { data } = await createTask(newTask);
+      console.log("here is the task from the server", data);
     } catch (err) {
       console.log(err);
     } finally {

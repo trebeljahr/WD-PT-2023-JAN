@@ -1,14 +1,17 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { AuthContext } from "../context/auth.context";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(undefined);
-
   const handleEmail = (e) => setEmail(e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
-
+  const navigate = useNavigate();
+  //getting thing from
+  const { setToken, authenticateUser, setIsLoggedIn } = useContext(AuthContext);
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -17,8 +20,14 @@ function Login() {
         `http://localhost:5005/auth/login`,
         userToLogin
       );
-      console.log("JWT token", data);
+      console.log("JWT token", data.authToken);
+      const actualToken = data.authToken;
+      setToken(actualToken);
+      authenticateUser();
+      setIsLoggedIn(true);
+      navigate("/profile");
     } catch (error) {
+      console.log("there was an error logging in", error);
       setErrorMessage(error.response.data.message);
     }
   };

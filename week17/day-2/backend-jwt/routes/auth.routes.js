@@ -50,6 +50,7 @@ router.post("/login", async (req, res) => {
 //this is the verify route for protected page of your app
 router.get("/verify", isAuthenticated, (req, res) => {
   console.log("here is our payload", req.payload);
+  const { _id } = req.payload;
   if (req.payload) {
     res.status(200).json({ user: req.payload });
   }

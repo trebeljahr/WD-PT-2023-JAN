@@ -2,7 +2,9 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
-const { isAuthenticated } = require("../middlewares/jwt.auth");
+const {
+  isAuthenticated: enrichRequestWithUser,
+} = require("../middlewares/jwt.auth");
 
 const saltRounds = 13;
 
@@ -48,12 +50,42 @@ router.post("/login", async (req, res) => {
 });
 
 //this is the verify route for protected page of your app
-router.get("/verify", isAuthenticated, (req, res) => {
+router.get("/verify", enrichRequestWithUser, (req, res) => {
   console.log("here is our payload", req.payload);
   const { _id } = req.payload;
   if (req.payload) {
     res.status(200).json({ user: req.payload });
   }
 });
+
+const enrichRequestWithPrivateThings = async (req, res, next) => {
+  const { _id } = req.payload;
+  try {
+    const user = await User.findById(_id);
+    req.privateThings = user.privateThings;
+    next();
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+router.get(
+  "/private-page",
+  enrichRequestWithUser,
+  enrichRequestWithPrivateThings,
+  async (req, res) => {
+    res.status(200).json({ privateThings: req.privateThings });
+  }
+);
+
+router.get(
+  "/private-page-2",
+  enrichRequestWithUser,
+  enrichRequestWithPrivateThings,
+
+  async (req, res) => {
+    res.status(200).json({ privateThings: req.privateThings });
+  }
+);
 
 module.exports = router;

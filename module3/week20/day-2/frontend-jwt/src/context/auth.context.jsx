@@ -18,6 +18,9 @@ const AuthContextWrapper = (props) => {
       try {
         const { data } = await axios.get("http://localhost:5005/auth/verify", {
           headers: { authorization: `Bearer ${gotToken}` },
+          body: {
+            token: gotToken,
+          },
         });
         console.log("response from verify route", data);
         setUser(data.user);
